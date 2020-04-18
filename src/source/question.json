@@ -1,0 +1,18 @@
+[
+{
+    "question":" 1 when was America discovered?",
+     "a":"1942",
+     "b":"1924",
+     "c":"1824",
+     "d":"1492",
+     "correct":"d"
+},
+{
+    "question":"who was the first prome minister of isreal?",
+    "a":"ben gurion",
+    "b":"moshe dayan",
+    "c":"yitzhak rabin",
+    "d":"lavi ashkol",
+    "correct":"a"
+}
+]
