@@ -1,6 +1,6 @@
-h1 {
+h5 {
     margin: 0;
-    padding: 0;
+    padding: 50px;
   }
   html, body, .app {
     margin: 0;
@@ -26,9 +26,27 @@ h1 {
     right: 25%;
     top: 25%;
     bottom: 25%;
+    width: 400px;
+    border-radius: 1cm;
     margin: auto;
-    background:rgb(122, 226, 122);
+    background:rgb(210, 216, 210);
   }
-  .closePopup{
+.closePopup{
     
+  }
+
+.button{
+
+  background-color: rgb(122, 161, 122); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 1cm;
+
   }

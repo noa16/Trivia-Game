@@ -7,8 +7,10 @@
     margin-right: 1020px;
     background: #cce5ff;
     margin: 5px;
+    cursor: pointer;
 }
 
 .question li :hover{
     color:green
 }
+

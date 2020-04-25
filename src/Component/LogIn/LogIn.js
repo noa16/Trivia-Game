@@ -4,11 +4,11 @@ import {Link} from 'react-router-dom'
 import axios from 'axios'
 import Popup from '../../UI/PopUp'
 import image from '../../Icon/Capture2.PNG'
+import {connect} from 'react-redux'
+import * as actionType from '../../Store/Actions/Action'
 
 
-
-
-const LogIn = ()=>{
+const LogIn = (props)=>{
 
   
 
@@ -45,7 +45,7 @@ const LogIn = ()=>{
      
         e.preventDefault()
         console.log("handle submit")
-           
+        props.saveUsername(username)
         
         Object.entries(usersDatabase).map(
          ([key, value]) =>{ 
@@ -127,5 +127,21 @@ const LogIn = ()=>{
     )
 }
 
+const mapStateToProps=(state)=>{
+    return {
+       answer:state. myAnswer,
+       score:state.totalScore
+    }
+}
 
-export default LogIn
+const mapDispatchToProps = dispatch=>{
+
+    return{
+  
+        saveUsername:(username)=>dispatch({type:actionType.USERNAME,username})
+
+
+    }
+  }
+
+export default connect(mapStateToProps,mapDispatchToProps)(LogIn)

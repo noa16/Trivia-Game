@@ -6,6 +6,7 @@ import SignUp from '../Component/SignUp/SignUp'
 import image from '../Icon/Capture2.PNG' 
 import StartGame from '../Component/startGame/StartGame'
 import Answer from '../Component/startGame/Answer'
+import Profile from'../Component/Profile/Profile'
 
 const Container =()=>{
 
@@ -23,6 +24,7 @@ const Container =()=>{
               <Route path="/SignUp" exact component={SignUp}></Route>
               <Route path="/StartGame" exact component={StartGame}></Route>
               <Route path="/Answer" exact component={Answer}></Route>
+              <Route path = "/Profile" exact component={Profile}></Route>
         </Router>
 
            

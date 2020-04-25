@@ -1,12 +1,20 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect,useContext } from 'react'
 import popup from '../../../UI/PopUp'
 import PopUp from '../../../UI/PopUp'
 import axios from 'axios'
+import classes from './Timer.module.css'
+import Profile from '../../Profile/Profile'
+
+export const AppContext = React.createContext()
+
+  
 const Timer = (props)=>{
 
  const [counter,setCounter]=useState(0)   
  const [showPopup,setPopup]=useState(0)
  var score  = props.totalScore
+
+
 
 const handleTimeout=()=>{
 
@@ -26,17 +34,22 @@ const handleTimeout=()=>{
         }
      },1000)
 
-     console.log("use effect")
+     
  },[counter])
  
  return(
 
-    <div>
-        {counter<=5?<div>{counter}</div>:showPopup===1?<PopUp text={"Timeot!!!  your total score:"+props.totalScore} closePopup={()=>handleTimeout()}/>:null}
-      
+    <div className={classes.timer}>
+        your time:{counter<=5?<div>{counter}</div>:showPopup===1?<PopUp myAnswer={props.myAnswer} text={"Timeot!!!  your total score:"+props.totalScore} closePopup={()=>handleTimeout()}/>:null}
+       
+       
     </div>
 )
 
 }
 
+
+
+
 export default Timer
+

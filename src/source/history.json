@@ -1,0 +1,18 @@
+[
+    {
+        "question":"When did the War of Independence occur ?",
+         "a":"1942",
+         "b":"1924",
+         "c":"1948",
+         "d":"1946",
+         "correct":"c"
+    },
+    {
+        "question":"who was the second prome minister of isreal?",
+        "a":"ben gurion",
+        "b":"moshe dayan",
+        "c":"yitzhak rabin",
+        "d":"moshe sharet",
+        "correct":"d"
+    }
+    ]

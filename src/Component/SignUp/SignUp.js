@@ -22,8 +22,9 @@ const SignUp = ()=>{
   
 
     return(
-        <div className={classes.container}>
-             <img src={image}/>
+      <div>
+        <img src={image}/>
+        <div className={classes.container}>    
             <h1>SignUp!!</h1>
         <form >
           <div>
@@ -50,6 +51,7 @@ const SignUp = ()=>{
           
              
         </div>
+      </div>
     )
 }
 

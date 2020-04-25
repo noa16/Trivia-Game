@@ -1,11 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import StartGame from '../../Component/startGame/StartGame'
+import {AppProvider} from '../../Component/startGame/Timer/Timer'
+
 
 const Toolbar = ()=>{
 
 
     return(
+      
         <div>
         <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
         <Link to="/" className="navbar-brand">Trivia</Link>
@@ -17,13 +20,17 @@ const Toolbar = ()=>{
           <li className="navbar-item">
           <Link to="/StartGame" className="nav-link">Start Game</Link>
           </li>
+         
           <li className="navbar-item">
-          <Link to="/Trivia" className="nav-link">Level</Link>
+          <Link to="/Profile" className="nav-link">My Profile</Link>
           </li>
+          
         </ul>
+         </div>
+        </nav>
         </div>
-      </nav>
-        </div>
+     
+      
 
     )
 }

@@ -8,8 +8,8 @@ const PopUp = (props)=>{
     return (
         <div className={classes.popup}>
           <div className={classes.popup_inner}>
-            <h1>{props.text}</h1>
-          <button onClick={props.closePopup}>close me</button>
+            <h5>{props.text}</h5>
+          <button className={classes.button} onClick={props.closePopup}>close me</button>
           </div>
         </div>
       );
