@@ -1,42 +1,31 @@
-
-.containerItem{
-    width:200px;
-    margin-right: 700px;
-    padding-left:70px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-.container{
-    margin: 10px;
+.footer{
+    background-color: rgb(238, 238, 196);
     display: flex;
-    flex-wrap: wrap;
-    cursor: pointer;
+    justify-content: space-between;
+  
+    margin-top: 220px;
 }
 
 
-.atom{
-    width:150px;
-    padding-bottom: 500px;
+.footerItem{
+    max-width:150px;
+    display: flex;
+    justify-content: center;
+    
+    
 }
-
-.card{
+.profilecard{
+    margin-right: 750px;
+}
+.info{
     position: absolute;
-    text-align: center;
-    width:600px;
-    background-color: honeydew;
-    margin-left: 450px;
-    right: 10px;
-    margin-top: -600px;
-    line-height: 33px;
-    height: 500px;
-   
-}
-
-.cardItem{
-    text-align: center;
+    margin-bottom: 400px;
+    max-width: 400px;
+    margin-left: 500px;
+     top: 300px;
 }
 
 .noa{
-    width: 200px;
+    width:200px;
+    height: 300px;
 }

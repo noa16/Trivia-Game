@@ -11,7 +11,7 @@ const Toolbar = ()=>{
       
         <div>
         <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-        <Link to="/" className="navbar-brand">Trivia</Link>
+        <Link to="/Trivia" className="navbar-brand">Trivia</Link>
         <div className="collpase navbar-collapse">
         <ul className="navbar-nav mr-auto">
           <li className="navbar-item">

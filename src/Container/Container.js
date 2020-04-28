@@ -10,17 +10,14 @@ import Profile from'../Component/Profile/Profile'
 
 const Container =()=>{
 
-        const[showTitle,setTitle] = useState(0)
-        const handleTitle=()=>{
-            console.log("handle title")
-            setTitle(1)
-        }
+      
         
         return(
         <Router>
              
               <Route path="/" exact component={LogIn}></Route>
               <Route path="/Trivia:id" exact component={Trivia}></Route>
+              <Route path="/Trivia" exact component={Trivia}></Route>
               <Route path="/SignUp" exact component={SignUp}></Route>
               <Route path="/StartGame" exact component={StartGame}></Route>
               <Route path="/Answer" exact component={Answer}></Route>
